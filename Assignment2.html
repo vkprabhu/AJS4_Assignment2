@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<script type="text/javascript">
+		function Person(gen) {
+			this.gender = gen;
+		}
+		function Student() {
+		}
+		var person = new Person("Male");
+		Student.prototype = person;
+		//alert(person.gender);
+		var student = new Student();
+		//alert(student.gender);
+		student.gender = "female"
+		alert(student.gender);
+	</script>
+	</body>
+</html>
